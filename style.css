@@ -1,0 +1,267 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+    font-weight: inherit;
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display: flex;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.place-items-center{
+    place-items: center;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.h-5rem{
+    height: 5rem;
+}
+.font-bold{
+    font-weight: bold;
+}
+.text-white{
+    color: white;
+}
+.text-center{
+    text-align: center;
+}
+.w-full{
+    width: 100%;
+}
+.h-full{
+    height: 100%;
+}
+.p-2rem{
+    padding:2rem;
+}
+.mt-1rem{
+    margin-top: 1rem;
+}
+.object-cover{
+    object-fit: cover;
+}
+.text-sm{
+    font-size: small;
+}
+.text-md{
+    font-size: medium;
+}
+.text-lg{
+    font-size: large;
+}
+.rounded-full{
+    border-radius: 100%;
+}
+.mx-auto{
+    margin-right: auto;
+    margin-left: auto;
+    margin: auto;
+}
+.my-1rem{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.my-2rem{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.h-full{
+    height: 100%;
+}
+
+footer{
+    text-align: center;
+    background: #90D4C5;
+    height: 20rem;
+}
+.brand{
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+.brand>ul{
+    font-size: 1rem; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.brand>ul>li{
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+.user-testimoni{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.user-testimoni>div{
+    display: flex;
+    flex-flow: column;
+    padding-left: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+.user-testimoni>div>img{
+    width: 40%;
+    margin: auto;
+}
+.testimoni-paragraph{
+    margin-top: 1rem;
+}
+.testimoni-user{
+    margin-top: 1rem;
+}
+.testimoni-name{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    height: 4rem;
+    background: #3ebfff;
+    color: #fff;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+}
+.navbar-nav{
+    display: none;
+}
+.nav-link{
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+}
+.hero-section{
+    height: calc(100vh - 4rem);
+    background-image: url('./images/mobile/image-header.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+.hero-title{
+    margin-top: -20rem;
+    font-size: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.transform-brand{
+    font-size: 2rem;
+    min-height: 30rem;
+}
+.transform-brand>div>p{
+    font-size: 0.9rem;
+}
+
+.transform-brand{
+    display: flex;
+}
+.brand-text{
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+  
+.testimoni-paragraph{
+    text-align: center;
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+
+
+
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    .navbar-nav{
+        display: flex;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    .navbar-nav{
+        display: flex;
+    }
+    .transform-brand{
+        display: flex;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .navbar-nav{
+        display: flex;
+    }
+    .transform-brand{
+        display: flex;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    .navbar-nav{
+        display: flex;
+    }
+    .transform-brand{
+        display: flex;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 10px) and (max-width: 480px) {
+    
+    .navbar-nav{
+        display: none;
+    }
+    .transform-brand{
+        flex-direction: column;
+        text-align: center;
+    }
+    .user-testimoni{
+        flex-flow: column;
+    }
+  }
